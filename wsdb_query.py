@@ -83,7 +83,9 @@ import datetime
 import argparse
 
 # 3rd party functions
-import atpy
+# import atpy
+# print(atpy.__version__)
+
 from astropy.table import Table
 from astropy.io import fits
 import pandas as pd
@@ -95,7 +97,7 @@ from librgm import sqlutil
 from librgm.wsdb import rd_config_wsdb
 from librgm.table_metadata import table_metadata
 
-print(atpy.__version__)
+
 # print(sqlutil.__version__)
 
 t0=time.time()

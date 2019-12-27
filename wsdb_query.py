@@ -111,7 +111,7 @@ import pandas as pd
 
 # private functions
 sys.path.append('/home/rgm/soft/python/lib/')
-from librgm import sqlutil
+import sqlutil
 # print(sqlutil.__version__)
 # help(sqlutil)
 from librgm.wsdb import rd_config_wsdb
@@ -683,6 +683,7 @@ if __name__ == "__main__":
 
     # Open and read the file as a single buffer
     debug = args.debug
+    verbose = args.verbose
     sqlquery = args.sqlquery
     sqlfile = args.sqlfile
     storedquery = args.storedquery
